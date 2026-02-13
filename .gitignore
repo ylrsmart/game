@@ -1,0 +1,35 @@
+# Cocos Creator
+temp/
+library/
+local/
+build/
+profile/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if using npm)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+
+# Export/Build files
+*.zip
+*.rar
+
+# Cocos specific
+settings/
+project.private.json
+
+# Micro app (WeChat specific)
+*.user
