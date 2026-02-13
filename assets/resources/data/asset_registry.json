@@ -1,0 +1,98 @@
+{
+  "version": "1.0",
+  "assets": {
+    "ui": {
+      "kenney_ui_pack": {
+        "name": "Kenney Pixel UI Pack",
+        "source": "https://kenney.nl/assets/pixel-ui-pack",
+        "license": "CC0",
+        "files": [
+          "button_01.png",
+          "button_02.png",
+          "button_03.png",
+          "panel_01.png",
+          "panel_02.png",
+          "panel_03.png",
+          "window_01.png",
+          "bar_01.png",
+          "bar_02.png",
+          "icon_settings.png",
+          "icon_close.png"
+        ]
+      }
+    },
+    "icons": {
+      "rpg_icons_496": {
+        "name": "496 Pixel Art RPG Icons",
+        "source": "https://opengameart.org/content/496-pixel-art-icons-for-medievalfantasy-rpg",
+        "license": "CC-BY",
+        "files": [
+          "icon_weapon_01.png",
+          "icon_armor_01.png",
+          "icon_potion_01.png",
+          "icon_scroll.png",
+          "icon_key.png",
+          "icon_chest.png"
+        ]
+      }
+    },
+    "characters": {
+      "top_down_rpg": {
+        "name": "Top Down RPG Characters",
+        "source": "https://opengameart.org/content/top-down-rpg-pixel-art",
+        "license": "CC-BY",
+        "files": [
+          "hero_idle_down.png",
+          "hero_idle_up.png",
+          "hero_idle_left.png",
+          "hero_idle_right.png",
+          "hero_walk_down_01.png",
+          "hero_walk_down_02.png",
+          "hero_attack_01.png",
+          "hero_hurt_01.png"
+        ]
+      }
+    },
+    "tiles": {
+      "rpg_tileset": {
+        "name": "Stunning Pixel Art RPG Tileset",
+        "source": "https://opengameart.org/content/stunning-pixel-art-rpg-tileset",
+        "license": "CC-BY",
+        "files": [
+          "tile_grass_01.png",
+          "tile_grass_02.png",
+          "tile_dirt_01.png",
+          "tile_dirt_02.png",
+          "tile_water_01.png",
+          "tile_wall_01.png",
+          "tile_wall_02.png",
+          "tile_floor_01.png",
+          "tile_door_01.png",
+          "deco_tree_01.png",
+          "deco_tree_02.png",
+          "deco_rock_01.png",
+          "deco_bush_01.png"
+        ]
+      }
+    },
+    "backgrounds": {
+      "menu_bg": {
+        "name": "Main Menu Background",
+        "source": "custom",
+        "files": ["menu_bg.png"]
+      },
+      "game_bg": {
+        "name": "Game Backgrounds",
+        "source": "custom",
+        "files": ["bg_grassland.png", "bg_dungeon.png"]
+      }
+    }
+  },
+  "directories": {
+    "ui": "assets/resources/images/ui/",
+    "characters": "assets/resources/images/characters/",
+    "tiles": "assets/resources/images/tiles/",
+    "backgrounds": "assets/resources/images/backgrounds/",
+    "icons": "assets/resources/images/icons/"
+  }
+}
