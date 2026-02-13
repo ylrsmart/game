@@ -1,6 +1,7 @@
 {
-  "version": "3.8.0",
+  "version": "3.8.8",
   "name": "six-realms-origin",
   "uuid": "six-realms-origin-uuid",
-  "type": "3d"
+  "type": "3d",
+  "description": ""
 }
