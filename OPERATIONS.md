@@ -9,18 +9,14 @@
 ## 📊 整体进度
 
 - **总阶段数**：5
-- **当前阶段**：阶段 2（迁移文件）→ 阶段 3（配置项目设置）
-- **完成度**：30%
+- **当前阶段**：阶段 3（配置项目设置）
+- **完成度**：40%
 
 ---
 
 ## 📝 待办事项清单
 
 ### 🔴 待办（未开始）
-
-#### 阶段 2：迁移项目文件
-
-- [ ] 2.4 验证文件迁移完成
 
 #### 阶段 3：配置项目设置
 
@@ -62,111 +58,102 @@
 - [x] 2.1 Dev Agent 迁移 assets 文件夹 ✅ 已完成
 - [x] 2.2 Dev Agent 迁移 scripts 文件夹 ✅ 已完成
 - [x] 2.3 Dev Agent 迁移配置文件 ✅ 已完成
+- [x] 2.4 验证文件迁移完成 ✅ 已完成
 
 ---
 
 ## 🎯 当前任务
 
-### 🔴 任务 2.4：验证文件迁移完成
+### 🔴 任务 3.1-3.4：配置项目设置
 
 **状态**：⏳ 进行中（需要你操作）
 **优先级**：🔴 高
-**预计时间**：3 分钟
+**预计时间**：5 分钟
 
 ---
 
 ## 📋 详细操作步骤
 
-### 任务 2.4：验证文件迁移完成
+### 任务 3.1-3.4：配置项目设置
 
 #### 操作步骤
 
-1. **刷新项目资源**
+1. **打开项目设置**
 
    在 Cocos Creator 中：
-   - 点击资源面板（Assets）的刷新按钮 🔄
-   - 或者按 `Cmd + R` 刷新
+   - 点击顶部菜单 **Project → Project Settings**
+   - 或按快捷键 `Cmd + ,`
 
-2. **检查 assets 文件夹结构**
+2. **配置游戏设置**
 
-   在左侧资源面板中，展开 `assets/`，确认能看到：
+   在 Project Settings 面板中，找到 **Project Settings → Game Config** 部分，设置以下内容：
+
    ```
-   assets/
-   ├── animations/        ← 动画资源
-   ├── prefabs/           ← 预制体
-   ├── resources/         ← 资源文件
-   │   ├── audio/         ← 音频文件
-   │   ├── data/         ← 数据文件
-   │   ├── fonts/        ← 字体文件
-   │   ├── images/       ← 图片资源
-   │   ├── particles/    ← 粒子效果
-   │   ├── textures/     ← 纹理
-   │   └── ui/           ← UI资源
-   ├── scenes/           ← 场景文件
-   └── scripts/           ← 脚本文件
-       ├── components/    ← 组件脚本
-       ├── data/         ← 数据脚本
-       ├── managers/     ← 管理器脚本
-       ├── scenes/       ← 场景脚本
-       ├── systems/      ← 系统脚本
-       └── utils/        ← 工具脚本
+   Design Resolution:
+   - Width: 1920
+   - Height: 1080
+
+   Adapter:
+   - Fit Mode: FIT_HEIGHT
+
+   Canvas:
+   - Width: 1920
+   - Height: 1080
    ```
 
-3. **检查关键资源**
+3. **配置目标平台**
 
-   点击进入以下文件夹，确认有文件：
-   - `assets/resources/images/icons/` - 应该看到图标
-   - `assets/resources/images/characters/` - 应该看到角色精灵
-   - `assets/resources/images/tiles/` - 应该看到 RPGTileset.png
-   - `assets/resources/images/ui/` - 应该看到 UI 资源
-   - `assets/scripts/components/` - 应该看到 Button.ts, Panel.ts 等
+   找到 **Project Settings → Platform** 部分：
 
-4. **检查脚本编译**
+   ```
+   Target Platform: WEB_MOBILE
+   ```
 
-   观察底部日志窗口：
-   - 检查是否有编译错误
-   - 检查是否有红色警告
-   - 脚本应该自动编译
+4. **保存设置**
+
+   - 点击面板底部的 **Apply** 或 **Save** 按钮
+   - 或者直接关闭面板，会自动保存
 
 ---
 
 #### 验证检查点
 
-- [ ] 资源面板刷新后能看到所有文件夹
-- [ ] assets/resources/images/ 下有 icons、characters、tiles、ui 文件夹
-- [ ] assets/scripts/ 下有 components、managers、scenes、systems 文件夹
-- [ ] 图标文件夹能看到 PNG 文件
-- [ ] 脚本文件夹能看到 .ts 文件
-- [ ] 没有编译错误
-- [ ] 没有红色警告
+- [ ] 能打开 Project Settings 面板
+- [ ] Design Resolution 设置为 1920 x 1080
+- [ ] Fit Mode 设置为 FIT_HEIGHT
+- [ ] Target Platform 设置为 WEB_MOBILE
+- [ ] 设置已保存
+- [ ] 没有错误提示
 
 ---
 
 #### 预期结果
 
-如果迁移成功，你应该在资源面板中看到完整的项目结构，包含所有资源和脚本。
+配置完成后，项目应该：
+- 在不同屏幕尺寸下自动适配（按高度适配）
+- 针对 Web Mobile 平台优化
+- 设计分辨率为 1920x1080（标准高清分辨率）
 
 ---
 
 ## 📢 反馈模板
 
-完成上述检查后，请按以下格式反馈：
+完成上述配置后，请按以下格式反馈：
 
 ### 如果成功 ✅
 
 ```
-✅ 任务 2.4 完成
-- 所有文件夹都存在
-- 能看到资源和脚本文件
-- 无编译错误
+✅ 项目设置完成
+- Design Resolution: 1920 x 1080
+- Fit Mode: FIT_HEIGHT
+- Platform: WEB_MOBILE
 ```
 
-### 如果有问题 ❌
+### 如果遇到问题 ⚠️
 
 ```
-❌ 任务 2.4 有问题
-- 缺少的文件夹：[列出缺失的文件夹]
-- 编译错误：[如果有]
+⚠️ 配置有问题
+- 问题描述：[描述问题]
 ```
 
 ---
@@ -174,43 +161,20 @@
 ## 🔄 下一步
 
 收到你的反馈后：
-- **成功** → 进入阶段 3，配置项目设置
+- **成功** → 进入阶段 4，导入和配置资源
 - **有问题** → PM Agent 分析问题
 
 ---
 
 ## 📊 Dev Agent 执行报告
 
-### ✅ 已完成迁移
+### ✅ 已完成
 
-| 迁移项 | 状态 | 文件数 |
-|--------|------|--------|
-| assets 文件夹 | ✅ 完成 | ~560 文件 |
-| scripts 文件夹 | ✅ 完成 | ~20 文件 |
-| 配置文件 | ✅ 完成 | package.json |
-
-### 详细信息
-
-**已迁移的文件夹：**
-- `assets/animations/` - 动画资源
-- `assets/prefabs/` - 预制体
-- `assets/resources/audio/` - 音频
-- `assets/resources/data/` - 数据文件
-- `assets/resources/fonts/` - 字体
-- `assets/resources/images/` - 所有图片资源
-- `assets/resources/particles/` - 粒子效果
-- `assets/resources/textures/` - 纹理
-- `assets/resources/ui/` - UI 资源
-- `assets/scenes/` - 场景
-- `assets/scripts/components/` - 组件脚本
-- `assets/scripts/data/` - 数据脚本
-- `assets/scripts/managers/` - 管理器脚本
-- `assets/scripts/scenes/` - 场景脚本
-- `assets/scripts/systems/` - 系统脚本
-- `assets/scripts/utils/` - 工具脚本
-
-**已更新的配置：**
-- `package.json` - 引擎版本改为 3.8.0
+| 阶段 | 任务 | 状态 |
+|------|------|------|
+| 阶段 1 | 创建新项目 | ✅ 完成 |
+| 阶段 2 | 迁移文件 | ✅ 完成 |
+| 修复 | 删除问题 prefab | ✅ 完成 |
 
 ---
 
@@ -218,19 +182,14 @@
 
 | 任务编号 | 任务名称 | 状态 | 执行者 | 预计时间 |
 |---------|---------|------|--------|----------|
-| 1.1 | Dev Agent 准备项目信息 | ✅ 完成 | Dev Agent | - |
-| 1.2 | 创建新项目 | ✅ 完成 | **你** | 5 分钟 |
-| 1.3 | 验证项目打开 | ✅ 完成 | **你** | 2 分钟 |
-| 2.1 | 迁移 assets 文件 | ✅ 完成 | Dev Agent | 自动 |
-| 2.2 | 迁移 scripts 文件 | ✅ 完成 | Dev Agent | 自动 |
-| 2.3 | 迁移配置文件 | ✅ 完成 | Dev Agent | 自动 |
-| 2.4 | 验证迁移完成 | ⏳ 进行中 | **你** | 3 分钟 |
-| 3.1-3.4 | 配置项目设置 | ⏳ 待开始 | **你** | 5 分钟 |
+| 1.1-1.3 | 创建新项目 | ✅ 完成 | **你** | 7 分钟 |
+| 2.1-2.4 | 迁移文件 | ✅ 完成 | Dev Agent + **你** | 3 分钟 |
+| 3.1-3.4 | 配置项目设置 | ⏳ 进行中 | **你** | 5 分钟 |
 | 4.1-4.5 | 导入配置资源 | ⏳ 待开始 | **你** + Dev Agent | 10 分钟 |
 | 5.1-5.7 | 创建第一个场景 | ⏳ 待开始 | **你** + Dev Agent | 15 分钟 |
 
 ---
 
-**文档版本**：v1.2
-**最后更新**：2025-02-13 18:24
-**当前状态**：等待任务 2.4 完成
+**文档版本**：v1.3
+**最后更新**：2025-02-13 18:30
+**当前状态**：等待任务 3.1-3.4 完成
